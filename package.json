@@ -1,0 +1,24 @@
+{
+    "name": "shedrives-html",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build:scss": "gulp",
+      "watch:scss": "gulp watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "gulp": "^4.0.2",
+      "gulp-clean-css": "^4.3.0",
+      "gulp-sass": "^5.1.0",
+      "node-sass": "^9.0.0",
+      "sass": "^1.62.1"
+    },
+    "dependencies": {
+      "gulp-plumber": "^1.2.1"
+    }
+  }
