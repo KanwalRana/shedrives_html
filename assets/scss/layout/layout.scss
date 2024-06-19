@@ -18,24 +18,63 @@ header {
         .nav {
             width: 65%;
             display: flex;
-
             li {
-                padding: 10px 20px;
+                padding: 10px 25px;
 
                 a {
-                    color: $dark-clr;
+                    color: $grey-clr;
                 }
             }
         }
-
         .nav-cta {
             width: 20%;
             display: flex;
             align-items: center;
             justify-content: space-around;
         }
+        
     }
-
+}
+.dropdown-links{
+    background-color: $light_clr;
+    padding: 10px 0;
+    width: 16%;
+    border-radius: 8px;
+    margin: 10px;
+    position: absolute;
+    top: 85px;
+    display: none;
+    li{
+        padding: 10px 0;;
+        a{
+            color: $grey-clr;
+            font-size: 0.9rem;
+        }
+    }
+}
+.dropdown:hover .dropdown-links {
+    display: block;
+}
+.dropdown-links-a{
+    background-color: $light_clr;
+    padding: 10px 0;
+    width: 16%;
+    border-radius: 8px;
+    margin: 10px;
+    position: absolute;
+    top: 85px;
+    
+    display: none;
+    li{
+        padding: 10px 0;;
+        a{
+            color: $grey-clr;
+            font-size: 0.9rem;
+        }
+    }
+}
+.dropdown-a:hover .dropdown-links-a {
+    display: block;
 }
 
 .br-40 {
@@ -45,6 +84,16 @@ header {
 .bg-aq {
     background-color: aqua;
 }
+.btn-p{
+    width: 332px;
+    background-color: $pri_clr;
+    border-radius: 16px;
+    border: 2px solid $pri_clr;
+    .btn{
+        width: 100%;
+        padding: 16px 0;
+    }
+}
 
 .btn {
     text-decoration: none;
@@ -53,9 +102,9 @@ header {
     background-color: transparent;
     padding: 16px 24px;
     border-radius: 16px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     // width: 330px;
-
+    max-height: 60px;
     color: black;
 
     &.is-outline-pri {
@@ -99,6 +148,10 @@ header {
     margin-top: 30px;
 }
 
+.qoute{
+    font-size: 2rem;
+}
+
 .main-content {
     // width: 100%;
     display: grid;
@@ -119,11 +172,12 @@ header {
 
         .container-img {
             width: 20%;
+            height: 100%;
         }
 
         .container-img img {
             width: 70%;
-
+            // height: initial;
         }
 
         .container-header {
@@ -262,6 +316,7 @@ header {
         }
 
         .cus-content {
+            // width: 100%;
             position: absolute;
             bottom: 30px;
             left: 30px;
@@ -285,6 +340,12 @@ header {
     }
 
     .content-review {
+        .card-d{
+            img{
+                border-radius: 40px;
+                height: 100%;
+            }
+        }
         .icon {
             width: 60px;
             height: 60px;
@@ -293,7 +354,7 @@ header {
         }
 
         p {
-            font-size: 1.25rem;
+            // font-size: 1.25rem;
             line-height: 30px;
         }
     }
@@ -335,14 +396,19 @@ header {
             height: 500px;
             img {
                 width: 100%;
-               height: 100%;
+                height: 100%;
                 border-radius: 30px;
+                object-fit: cover;
+               object-position: 50% 100%;
             }
         }
         .cus-content {
             position: absolute;
             bottom: 30px;
             left: 30px;
+            .btn{
+                font-size: 1.25rem;
+            }
         }
     }
 }
@@ -519,9 +585,36 @@ header {
                 }
             }
         }
+        .content-jobs{
+            a{
+                margin-top: 10px;
+                min-height: 270px;
+            }
+            .card{
+                .head-d{
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: $blue-clr;
+                }
+                p{
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    // margin: 16px 0;
+                    color: $dark-clr;
+                }
+                .card-link{
+                    li{
+                        margin-right: 15px;
+                        font-size: 0.9rem;
+                        color: $grey_clr;
+                    }
+                }
+            }   
+        }
        
     }
 }
+
 
 .main-footer {
     width: 100%;

@@ -15,6 +15,10 @@ html {
   background-color: #f5f5f6;
 }
 
+.f-size-09 {
+  font-size: 0.97rem;
+}
+
 .head2 {
   font-size: 1.25rem;
 }
@@ -50,8 +54,12 @@ p {
   font-size: 1.25rem;
 }
 
+.f-r {
+  float: inline-end;
+}
+
 .b-br-2 {
-  border: 2px solid #a7e92f;
+  border: 2px solid #FC64B0;
   border-radius: 50%;
 }
 
@@ -102,11 +110,15 @@ p {
 }
 
 .text-pri {
-  color: #a7e92f;
+  color: #FC64B0;
 }
 
 .text-sec {
   color: #7ebefc;
+}
+
+.mt-120 {
+  margin-top: 120px;
 }
 
 .my-80 {
@@ -283,6 +295,10 @@ p {
   margin-left: 10px;
 }
 
+.mr-05 {
+  margin-right: 5px;
+}
+
 .mr-1 {
   margin-right: 16px;
 }
@@ -294,6 +310,10 @@ p {
 
 .ml-2 {
   margin-left: 20px;
+}
+
+.ml-3 {
+  margin-left: 30px;
 }
 
 .mr-2 {
@@ -308,6 +328,10 @@ p {
 .mx-3 {
   margin-left: 34px;
   margin-right: 34px;
+}
+
+.m-1 {
+  margin: 10px;
 }
 
 .m-auto {
@@ -385,6 +409,10 @@ p {
 
 .f-wrap {
   flex-wrap: wrap;
+}
+
+.f-diraction-c {
+  flex-direction: column;
 }
 
 .jc-f-sb {
