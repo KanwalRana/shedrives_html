@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/210c3a1a77.js" crossorigin="anonymous"></script>
+ 
   <link rel="stylesheet" href="assets/css/layout/layout.css" />
   <title>Home</title>
 </head>
@@ -14,11 +15,10 @@
     <div class="header-content">
       <div class="logo">
         <a href="index.html"><h1 class="head5 text-pri">sheDrive</h1></a>
-        
         <!-- <a href="#"><img src="assets/images/logo_indrive.svg" alt="" /></a> -->
       </div>
-      <nav class="nav">
-        <li class="dropdown">
+      <nav class="nav" >
+        <li class="dropdown" >
           <a href="#" class="dropbtn">Mobility</a>
         </li>
         <div class="dropdown-links">
@@ -34,15 +34,18 @@
         </li>
         <div class="dropdown-links-a">
           <li><a href="our_story.html">Our origin and values</a></li>
-          <li><a href="impact.html">Our impact</a></li>
-          <li><a href="">Contacts</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Newsroom</a></li>
-          <li><a href="">sheDrive book</a></li>
-          <li><a href="">New ventures</a></li>
+          <li><a href="our-impact.html">Our impact</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="newsroom.html">Newsroom</a></li>
+          <li><a href="book.html">sheDrive book</a></li>
+          <li><a href="ventures.html">New ventures</a></li>
         </div>
         <li><a href="Career.html">Career</a></li>
       </nav>
+      <div class="toggle-button" id="toggle-button">
+        ☰
+      </div>
       <div class="nav-cta">
         <div class="lan-dd">
           En
@@ -67,8 +70,18 @@
           </ul>
         </div> -->
         <div>
-          <a href="#" class="btn is-outline-pri ">Become a Driver</a>
+          <a href="driver.html" class="btn is-outline-pri ">Become a Driver</a>
         </div>
+      </div>
+    </div>
+    <div class="sidebar" id="nav-links">
+      <li><a href="#" class="dropbtn">Mobility</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="safety.html">Safety</a></li>
+      <li><div><a href="About.html" class="dropbtn-a">About us</a></div></li>
+      <li><a href="Career.html">Career</a></li>
+      <div class="w-100 mt-2">
+        <a href="driver.html" class="btn is-outline-pri w-100">Become a Driver</a>
       </div>
     </div>
   </header>
@@ -89,20 +102,18 @@
             </p>
           </div>
           <div class="container-btn ac-c jc-c mx-2">
-            <a class="btn-1">Book Now
+            <a class="btn-1" href="bookings.html">Book Now
               <img src="assets/images/arrowUp.svg" class="mx-1" alt="">
             </a>
           </div>
         </div>
       </div>
       <div class="content-box my-1">
-        <div class="content-slider py-4 px-4">
+        <div class="content-slider py-4 px-4" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
           <div class="content-header">
-  
             <li><a href="#">Mobility</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Impact</a></li>
-  
           </div>
           <div class="content-section py-4">
             <div>
@@ -161,7 +172,7 @@
             </div>
           </div>
           <p class="py-2 text-light">Ride or drive, shop or deliver, send or receive – one app for all fair deals</p>
-          <div class="d-flex">
+          <div class="d-flex card-par">
             <div class="card col-25 mr-1 bg-sec br-40 ">
               <img src="assets/images/car.svg" alt="">
               <div class="mt-1">
@@ -392,7 +403,7 @@
         <a href="" class="btn">En</a>
       </div>
     </div>
-    <div class="footer-body d-flex">
+    <div class="footer-body d-flex jc-f-sb">
       <div class="col-33">
         <div class=" social-icons">
           <a href="#"><i class="fa-brands fa-wikipedia-w"></i></a>
@@ -416,7 +427,7 @@
         <p class="pt-2">© SUOL INNOVATIONS LTD, 2013-2024</p>
       </div>
       <div class="col-20 pl-0">
-        <img src="assets/images/brandsign.svg" alt="">
+        <img src="assets/images/brandsign.svg" class="w-100" alt="">
       </div>
     </div>
     <div class="footer-end p-3 d-flex w-100">
@@ -429,6 +440,7 @@
   </footer>
 
   <script src="assets/js/script.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 
 </body>
 </html>

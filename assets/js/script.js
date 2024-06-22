@@ -36,3 +36,12 @@ window.addEventListener('click', (event) => {
  }
 });
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.getElementById("toggle-button");
+    const navLinks = document.getElementById("nav-links");
+
+    toggleButton.addEventListener("click", function() {
+    navLinks.classList.toggle("active");
+});
+});

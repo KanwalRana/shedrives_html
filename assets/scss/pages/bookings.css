@@ -534,4 +534,130 @@ p {
 
 .bg-gradient {
   background-image: linear-gradient(to top, #1c2024, #272c33);
-}/*# sourceMappingURL=base.css.map */
+}
+
+.main-content {
+  font-size: 16px;
+}
+.main-content .content-box {
+  background-image: url("../../images/city_cover.webp");
+}
+.main-content .content-box .content-ser .form-control {
+  margin: 20px;
+  padding: 30px;
+  border-radius: 20px;
+}
+.main-content .content-box .content-ser .form-control .form-inline {
+  font-size: 1rem;
+}
+.main-content .content-box .content-ser .form-control .form-inline input {
+  padding: 20px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(238, 238, 238);
+  margin-left: 10px;
+}
+.main-content .content-box .content-ser .form-control .form-inline button {
+  background-color: #FC64B0;
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin: 0px 10px;
+  border: none;
+}
+.main-content .content .content-review .icon {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-content: center;
+}
+.main-content .content-card .card .icon {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+}
+.main-content .content-card .card .icon i {
+  font-size: 0.9rem;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 30px;
+  color: #ffffff;
+  background-color: #272c33;
+}
+
+.btn-1 {
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+
+.btn-2 {
+  padding: 15px 40px;
+  border-radius: 15px;
+}
+
+.bg-grey {
+  background-color: rgb(241, 241, 241);
+}
+
+header .header-content {
+  width: 100%;
+  max-width: 1440px;
+  padding: 16px 32px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-content .nav-cta .btn {
+  padding: 10px 15px;
+  border-radius: 30px;
+  color: #ffffff;
+}
+
+.main-footer {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  position: relative;
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+}
+.main-footer .footer-body {
+  width: 100%;
+  padding: 20px 32px 32px 24px;
+  color: #848e9c;
+}
+.main-footer .footer-body p {
+  font-size: 0.95rem;
+}
+.main-footer .footer-body .playstore-icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.main-footer .footer-body .playstore-icons a {
+  width: 30%;
+}
+.main-footer .footer-body .playstore-icons a img {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.main-footer .footer-body .playstore-icons .social-icons {
+  display: flex;
+}
+.main-footer .footer-body .playstore-icons .social-icons i {
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+@media (min-width: 1920px) {
+  .main-content {
+    max-width: 1800px;
+  }
+  .header-content {
+    max-width: 1800px;
+  }
+}/*# sourceMappingURL=bookings.css.map */

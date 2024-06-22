@@ -26,6 +26,14 @@ header {
                 }
             }
         }
+        
+        .toggle-button {
+            display: none;
+            font-size: 24px;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            width: 10%;
+        }
         .nav-cta {
             width: 20%;
             display: flex;
@@ -34,7 +42,18 @@ header {
         }
         
     }
-}
+    .sidebar{
+        display: none;
+        background-color: #fff;
+        padding: 20px;
+        li{
+            margin: 20px;
+            a{
+                color: black;
+            }
+        }
+    }
+}   
 .dropdown-links{
     background-color: $light_clr;
     padding: 10px 0;
@@ -105,7 +124,7 @@ header {
     font-size: 1rem;
     // width: 330px;
     max-height: 60px;
-    color: black;
+    // color: black;
 
     &.is-outline-pri {
         border: 2px solid $pri_clr;
@@ -207,7 +226,7 @@ header {
 
         .content-section {
             width: 60%;
-            display: block;
+            // display: block;
             margin: 10px;
 
         }
@@ -358,6 +377,27 @@ header {
             line-height: 30px;
         }
     }
+    .content-review-b{
+        display: grid;
+        place-items: center;
+        .card{
+            display: grid;
+            place-items: center;
+            .icon{
+                width: 200px;
+                height: 200px;
+                img{
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .content-download-app-b{
+        a{
+            color: $pri_clr;
+        }
+    }
 
     .content-imp {
         position: relative;
@@ -415,6 +455,70 @@ header {
 
 .main-content-in {
     width: 100%;
+    .content-box{
+        label{
+            
+            font-size: 1rem;
+        }
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 17px;
+            border: none;
+            border-radius: 10px;
+            box-sizing: border-box;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            resize: vertical;
+            font-size: 1rem;
+            background-color: rgb(245, 245, 245);
+          }
+          input[type=phone], [type=email] {
+            width: 100%;
+            padding: 17px;
+            border: none;
+            border-radius: 10px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            font-size: 1rem;
+            background-color: rgb(245, 245, 245);
+          }
+          input[type=file] {
+            display: inline-block;
+            width: 80px;
+            padding: 80px 20px 0px 20px;
+            height: 80px;
+            overflow: hidden;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: grey;
+            background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png') center center no-repeat #e4e4e4;
+            border-radius: 20px;
+            background-size: 60px 60px;
+            
+          }
+          
+          input[type=submit] {
+            color: white;
+            padding: 0 80px;
+            border: none;
+            border-radius: 4px;
+            line-height: 24px;
+            height: 60px;
+            cursor: pointer;
+            font-size: 1rem;
+          }
+          
+          input[type=submit]:hover {
+            background-color: #45a049;
+          }
+          
+          .container {
+            border-radius: 5px;
+          }
+    }
 
     .content-box {
         width: 100%;
@@ -615,6 +719,72 @@ header {
     }
 }
 
+@media (min-width: 1920px) {
+    .main-content {
+        max-width: 1800px;
+    }
+    .header-content{
+        max-width: 1800px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .header-content{
+        max-width: 760px;
+        .nav-links {
+            display: block;
+            flex-direction: column;
+            width: 100%;
+        }
+        .nav li{
+            display: none;
+        }
+    }
+    .nav-cta{
+        display: none;
+    }
+    .toggle-button {
+        display: block;
+        color: black;
+        float: center;
+    }
+    .main-content{
+        width: 100%;
+        .content-statics{
+            width: 100%;
+            display: flex;
+        }
+        .content-mobility{
+            .card-par{
+                display: block;
+                width: 100%;
+                .card{
+                    width: 100%;
+                    display: flex;
+                    img{
+                        position: relative;
+                        width: 120px;
+                        height: 120px;
+                        float: left;
+                    }
+                }
+            }
+        }
+        .content-app{
+            .content-section{
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+    .main-footer{
+        width: 100%;
+    }
+    .footer-body{
+        display: block;
+    }
+}
 
 .main-footer {
     width: 100%;
@@ -641,8 +811,8 @@ header {
 
     .footer-body {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
         padding: 20px 32px 32px 24px;
         color: #848e9c;
 
